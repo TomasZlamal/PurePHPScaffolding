@@ -1,7 +1,6 @@
 <?php
 
 require "../utils/view_handling.php";
-
 render_view(
     "homepage",
     [
