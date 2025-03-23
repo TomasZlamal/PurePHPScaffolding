@@ -11,7 +11,7 @@ function routing_failed($code = 404)
     die();
 }
 
-function solveRoute($uri, $routes, $conn)
+function solveRoute($uri, $routes)
 {
 
     if (array_key_exists($uri, $routes)) {
@@ -25,4 +25,4 @@ $routes = [
     "/" => "../controllers/home.php",
 ];
 
-solveRoute($uri, $routes, $conn);
+solveRoute($uri, $routes);
